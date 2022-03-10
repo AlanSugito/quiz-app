@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Quiz app</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <script src="question.js" defer></script>
+  </head>
+  <body>
+      <audio src="sfx/correct.mp3" class="correct-sound"></audio>
+      <audio src="sfx/wrong.mp3" class="wrong-sound"></audio>
+      <audio src="sfx/backsound.mp3" class="backsound"></audio>
+    <h2>Mini Quiz</h2>
+    <div class="container">
+      <div class="question-container hide">
+        <h2 class="question">Question</h2>
+        <div class="answer-buttons">
+          
+        </div>
+      </div>
+
+      <div class="controls">
+        <button class="btn start-button">Start</button>
+        <button class="btn next-button hide">Next</button>
+        <button class="exit-button btn hide">Exit quiz</button>
+      </div>
+    </div>
+  </body>
+</html>
