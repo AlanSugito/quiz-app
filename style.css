@@ -83,7 +83,7 @@ body{
     background-color: var(--wrong);
 }
 .quiz{
-    max-width: 80%;
+    max-width: 90%;
     width: 800px;
     display: flex;
     flex-direction: column;
@@ -136,7 +136,13 @@ body{
     }
     body{
         overflow-y: scroll;
-        padding: 3rem auto;
+        padding: 3rem 2rem;
+    }
+    .container{
+        width: 100%;
+    }
+    .login{
+        width: 80%;
     }
 }
 
