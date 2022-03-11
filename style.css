@@ -18,8 +18,15 @@ body{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
+    background-image: url(img/ahoy.jpg);
+}
+.header{
+  background: #fff;
+  padding: 10px 20px;
+  border: 2px solid black;
+  border-radius: 30px;
 }
 .container{
     width: 800px;
@@ -27,6 +34,7 @@ body{
     border: 3px solid black;
     border-radius: 30px;
     padding: 2rem;
+    background: #fff;
     
 }
 .animate{
@@ -99,6 +107,8 @@ body{
     border-bottom: 2px solid rgb(24, 240, 255);
     padding: 0 10px;
     transition: .3s;
+    text-align: center;
+    font-size: 1.5rem;
 }
 .input-name:focus{
     border-color: navy;
@@ -110,6 +120,23 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    padding: 1.5rem;
+    border: 2px solid black;
+    border-radius: 30px;
+    background: #fff;
+}
+.dashboard > h2{
+    font-weight: 400;
+}
+
+@media (max-width: 600px) {
+    .dashboard{
+        position: static;
+    }
+    body{
+        overflow-y: scroll;
+        padding: 3rem auto;
+    }
 }
 
 @keyframes fade {
