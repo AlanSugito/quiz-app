@@ -144,6 +144,9 @@ body{
     .login{
         width: 80%;
     }
+    .input-name{
+        width: 80%;
+    }
 }
 
 @keyframes fade {
