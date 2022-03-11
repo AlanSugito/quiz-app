@@ -35,4 +35,31 @@ const questions = [
       { text: "Bjarne Stroustrup", correct: false },
     ],
   },
+  {
+    question: "Leader girl group TWICE adalah",
+    answers: [
+      { text: "Tzuyu", correct: false },
+      { text: "Dahyun", correct: false },
+      { text: "Momo", correct: false },
+      { text: "Jihyo", correct: true },
+    ],
+  },
+  {
+    question: "Siapa cewek favorit saya",
+    answers: [
+      { text: "Jihyo", correct: true },
+      { text: "Lia", correct: true },
+      { text: "Ningning", correct: true },
+      { text: "Taeyeon", correct: true },
+    ],
+  },
+  {
+    question: "Hero role fighter di Mobile Legend",
+    answers: [
+      { text: "Hanzo", correct: false },
+      { text: "Yve", correct: false },
+      { text: "Alucard", correct: true },
+      { text: "Angela", correct: false },
+    ],
+  },
 ];
