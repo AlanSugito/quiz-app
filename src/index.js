@@ -1,5 +1,4 @@
 window.addEventListener("DOMContentLoaded", () => {
-  
 submitButton.addEventListener("click", logIn)
 submitButton.addEventListener("submit", logIn)
 startButton.addEventListener("click", startQuiz);

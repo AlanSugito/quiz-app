@@ -98,4 +98,6 @@ function logIn() {
   dashboard.classList.remove("hide");
   nameTag.innerText = inputName.value;
   inputName.value = "";
+  backsound.play()
+  
 }
