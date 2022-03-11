@@ -19,13 +19,18 @@ body{
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    position: relative;
 }
 .container{
     width: 800px;
-    max-width: 80%;
+    max-width: 90%;
     border: 3px solid black;
     border-radius: 30px;
     padding: 2rem;
+    
+}
+.animate{
+    animation: slide-up 1s forwards;
 }
 .answer-buttons{
     display: grid;
@@ -39,6 +44,7 @@ body{
     border: 2px solid black;
     color: rgb(26, 26, 26);
     border-radius: 20px;
+    cursor: pointer;
 }
 
 .controls{
@@ -49,6 +55,7 @@ body{
 }
 .hide{
     display: none;
+    visibility: hidden;
 }
 .start-button{
     width: 50%;
@@ -66,4 +73,55 @@ body{
 }
 .wrong{
     background-color: var(--wrong);
+}
+.quiz{
+    max-width: 80%;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login{
+    border: 3px solid black;
+    padding:  20px;
+    border-radius: 30px;
+    position: absolute;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    animation: fade 1.5s forwards;
+}
+.input-name{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(24, 240, 255);
+    padding: 0 10px;
+    transition: .3s;
+}
+.input-name:focus{
+    border-color: navy;
+}
+.submit-button:hover{
+    background-color: rgba(24,240,255,.6);
+}
+.dashboard{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes fade {
+    from{
+        opacity: 0;
+    }
+}
+@keyframes slide-up {
+    from{
+        opacity: 0;
+        transform: translateY(1em);
+    }to{
+        opacity: 1;
+    }
 }

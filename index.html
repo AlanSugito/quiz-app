@@ -6,27 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mini Quiz app</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
-    <script src="question.js" defer></script>
   </head>
   <body>
-      <audio src="sfx/correct.mp3" class="correct-sound"></audio>
-      <audio src="sfx/wrong.mp3" class="wrong-sound"></audio>
-      <audio src="sfx/backsound.mp3" class="backsound"></audio>
-    <h2>Mini Quiz</h2>
-    <div class="container">
-      <div class="question-container hide">
-        <h2 class="question">Question</h2>
-        <div class="answer-buttons">
-          
+    <div class="dashboard hide">
+      <h2>Name : <span class="name"></span></h2>
+      <h2>Correct : <span class="correct-score">0</span></h2>
+      <h2>Wrong : <span class="wrong-score">0</span></h2>
+    </div>
+
+    <audio src="sfx/correct.mp3" class="correct-sound"></audio>
+    <audio src="sfx/wrong.mp3" class="wrong-sound"></audio>
+    <audio src="sfx/backsound.mp3" class="backsound"></audio>
+    <div class="login">
+      <h3>Masukan Nama</h3>
+      <input type="text" class="input-name" />
+      <button class="btn submit-button">Submit</button>
+    </div>
+    <div class="quiz hide">
+      <h2>Mini Quiz</h2>
+      <div class="container">
+        <div class="question-container hide">
+          <h2 class="question">Question</h2>
+          <div class="answer-buttons"></div>
+        </div>
+
+        <div class="controls">
+          <button class="btn start-button">Start</button>
+          <button class="btn next-button hide">Next</button>
+          <button class="exit-button btn hide">Exit quiz</button>
         </div>
       </div>
-
-      <div class="controls">
-        <button class="btn start-button">Start</button>
-        <button class="btn next-button hide">Next</button>
-        <button class="exit-button btn hide">Exit quiz</button>
-      </div>
     </div>
+    <script src="src/elements.js"></script>
+    <script src="src/question.js"></script>
+    <script src="src/method.js"></script>
+    <script src="src/index.js"></script>
   </body>
 </html>
